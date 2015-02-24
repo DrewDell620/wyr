@@ -1,0 +1,416 @@
+/* General Styles */
+
+a{text-decoration: none;}
+
+body{ 
+  padding: 0;
+  background-image:url('images/body.jpg'); 
+  margin: 0 auto;
+  overflow-y: scroll;
+  font-family: 'Open-Sans';
+}
+
+h3{
+  font: 2.4em Open-Sans;
+  color: #444349;
+}
+
+h4{
+  font: 1.4em Open-Sans;
+  color: #444349;
+}
+
+label{
+  color: #444349;
+}
+
+table{
+  font-family: 'Open-Sans';
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 15px;            
+}
+#boxtable{
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px; 
+}
+
+#formtitle{
+  font-size: 25px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+#formcreator{
+  background: #E6E6E6;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-top-right-radius: 3px;
+  border-top-right-radius: 15px; 
+}
+
+#answercreator{
+  background: #E6E6E6;
+  -webkit-border-top-left-radius: 3px;
+  -moz-border-top-left-radius: 3px;
+  border-top-left-radius: 15px; 
+  border: 3px solid #FFF;
+}
+
+#datetime{
+  border-bottom: 1px solid #E6E6E6;
+}
+
+#formtable p.button input{
+  cursor: pointer;	
+  background: #444349;
+  padding: 8px 5px;
+  font-family: 'Exo','Arial Narrow',Arial,sans-serif;
+  color: #fff;
+  font-size: 20px;	
+  border: 1px solid #444349;	
+  margin: 5px 0px;	
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#formtable p.button input:hover{
+  background: #6C6C6F;
+}
+#formtable p.button input:focus{
+  background: #6C6C6F;
+  position: relative;
+  top: 1px;
+  border: 1px solid #0C4C57;	
+  -webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+}
+p { 
+  margin:0;
+  font-family: 'Open-Sans';
+}
+
+
+a.logo{
+  margin: 0px 0 0; 
+  padding:0px 5px 0px;
+  font: 50px Exo;
+  color: #FFF;
+  float: left;
+  text-transform: capitalize;
+}
+
+a.logout{
+  margin: 0px 0 0; 
+  padding:16px 15px 17px;
+  font: 25px Exo;
+  color: #FFF;
+  float: right;
+  text-transform: capitalize;
+}
+
+a.logout:hover{
+   background: #6C6C6F;
+}
+
+/* Messages */
+.message{
+  text-align: center;
+}
+
+/* Font Styles */
+
+@font-face{
+  font-family: Open-Sans;
+  src: url("fonts/OpenSans-Regular.ttf") format("opentype");
+} 
+@font-face{
+  font-family: Exo;
+  src: url("fonts/Exo-Thin.ttf") format("opentype");
+}
+
+
+/* Main Div Styles */
+
+#wrapper{
+  width: 960px;
+  margin: 100px auto 0px;
+}
+
+#header{
+  height: 64px;
+  width: 100%;
+  text-align: left;
+  background-image:url('images/header.jpg'); 
+  position:fixed; 
+  top:0px; 
+}
+
+#content{
+  padding: 0 2em 2em;
+  background-image:url('images/body.jpg');
+  font-family: 'Open-Sans';
+}
+
+/* Nav Styles */
+    
+#nav {
+  font: 1em Exo;
+  float: right;
+  background-image:url('images/header.jpg');
+  padding: 0px 10px;
+}
+ 
+#nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  posistion: relative;
+}
+
+#nav ul li{
+  display: inline-block;
+} 
+
+#nav ul li:hover{background-color: #555459;}
+    
+#nav ul li img{
+  vertical-align: middle;
+  padding-left: 4.9px;
+}
+
+#nav ul li a,visited{
+  color: #FFF;
+  display: block;
+  padding: 21px 25px;
+}
+
+#nav ul li:hover ul{display: block;}
+    
+#nav ul ul{
+  display: none;
+  position: absolute;
+  text-align: left;
+  background-image:url('images/header.jpg');
+}
+
+#nav ul ul li{display: block;}
+    
+#nav ul ul li a:hover{color: #FFF;} 
+
+#nav a{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  posistion: relative;
+  color: #FFF;
+  display: inline-block;
+  background-image:url('images/header.jpg');
+}
+#nav a:visited{
+  color: #FFF;
+  display: block;
+  padding: 21px 25px;
+}
+
+#nav a:hover{background-color: #555459;}
+
+
+
+
+/* Login */
+
+/** fonts used for the icons **/ 
+@font-face {
+    font-family: 'FontomasCustomRegular';
+    src: url('fonts/fontomas-webfont.eot');
+    src: url('fonts/fontomas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/fontomas-webfont.woff') format('woff'),
+         url('fonts/fontomas-webfont.ttf') format('truetype'),
+         url('fonts/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/** The wrapper that will contain our two forms **/
+#formwrapper{
+  width: 60%;
+  right: 0px;
+  min-height: 560px;	
+  margin: 0px auto;	
+  width: 500px;
+  position: relative;	
+}
+
+
+/**** Styling the form elements **/
+
+#formwrapper a{
+  color: #5F9BC6;
+  text-decoration: underline;
+}
+
+#formwrapper h1{
+  font-size: 48px;
+  color: #444349;
+  font-family: 'Open-Sans';
+  font-weight: bold;
+  text-align: center;
+}
+
+/** For the moment only webkit supports the background-clip:text; */
+
+
+#formwrapper p{margin:5px 0px;}
+
+#formwrapper label{
+  color: #405C60;
+  position: relative;
+  font-family: 'Open-Sans';
+}
+
+
+/* all the input except submit*/
+#entry input{
+  width: 92%;
+  margin-top: 4px;
+  padding: 10px 5px 10px 32px;	
+  border: 1px solid #B2B2B2;
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing : content-box;
+  box-sizing : content-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+}
+
+/** styling icons**/
+[data-icon]:after {
+  content: attr(data-icon);
+  font-family: 'FontomasCustomRegular';
+  color: #444349;
+  position: absolute;
+  left: 10px;
+  top: 35px;
+  width: 30px;
+}
+
+/*styling both submit buttons */
+
+#formwrapper p.button input{
+  width: 30%;
+  cursor: pointer;	
+  background: #444349;
+  padding: 8px 5px;
+  font-family: 'Exo','Arial Narrow',Arial,sans-serif;
+  color: #fff;
+  font-size: 24px;	
+  border: 1px solid #444349;	
+  margin: 5px 0px;	
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#formwrapper p.button input:hover{background: #6C6C6F;}
+#formwrapper p.button input:focus{
+  background: #6C6C6F;
+  position: relative;
+  top: 1px;
+  border: 1px solid #0C4C57;	
+  -webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+}
+
+p.login.button,
+p.signin.button{
+  text-align: right;
+  margin: 10px 0px 0px;
+}
+
+
+/*styling the links to change from one form to another */
+
+#formbottom{
+  position: absolute;
+  color: #7F7C7C;
+  height: 20px;
+  width: 440px;
+  padding: 17px 0px 20px 0px;
+  font-family: 'Open-Sans';
+  font-size: 18px;
+  text-align: center;
+  border-top: 1px solid #DBE5E8;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+#formbottom a {
+  background: #ffffff;
+  padding: 2px 6px;
+  color: #444349;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+#formbottom a:hover {color: #6C6C6F;}
+
+
+/** Styling both forms **/
+#register, 
+#login{
+  position: absolute;
+  top: 0px;
+  width: 88%;	
+  padding: 18px 6% 60px 6%;
+  margin: 0 0 35px 0;
+  background: #FFF;
+  border-radius: 15px;		
+}
+
+
+/** Styling the voter box on view */
+
+#votetable{
+  position: fixed;
+  left: 300px;
+  right: 300px;
+}
+
+#points{
+  width: 50%;
+  float: left;
+}
+
+#pic{
+  width: 50%;
+  float: left;
+  text-align: right;
+ }
+
+
+
+#posts{clear:both;}
+
+
+/** Fixes for Internet Explorer */
+
+.lt8 #formwrapper input{
+  padding: 10px 5px 10px 32px;
+  width: 92%;
+}
+
+.lt8 #formwrapper h1{color: #066A75;}
+
+.lt8 #register{display: none;}
+
+.lt8 p.change_link,
+.ie9 p.change_link{
+  position: absolute;
+  height: 90px;
+  background: transparent;
+}
