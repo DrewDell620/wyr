@@ -1,0 +1,1 @@
+WYR is a site that lets users post, view, and vote on "would you rather?" questions.
